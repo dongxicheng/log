@@ -1,0 +1,264 @@
+
+04/10 15:00:46: Launching 'app' on Rokid RG-stationXR2.
+Install successfully finished in 1 s 292 ms.
+$ adb shell am start -n "com.rokid.cslam.tester/com.rokid.cslam.main.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Connected to process 22758 on device 'rokid-rg_stationxr2-1301072151000221'.
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+I/Zygote: seccomp disabled by setenforce 0
+I/id.cslam.teste: Late-enabling -Xcheck:jni
+E/id.cslam.teste: Unknown bits set in runtime_flags: 0x8000
+I/Perf: Connecting to perf service.
+I/AdrenoGLES-0: Profiling interface enabled.
+I/AdrenoGLES-0: ESXAPILOG: API logging initialized: Name = com.rokid.cslam.tester, PID = 22758
+I/RenderThread: type=1400 audit(0.0:4317): avc: denied { open } for path="/dev/__properties__/u:object_r:vendor_system_prop:s0" dev="tmpfs" ino=31314 scontext=u:r:untrusted_app_27:s0:c152,c256,c512,c768 tcontext=u:object_r:vendor_system_prop:s0 tclass=file permissive=1 app=com.rokid.cslam.tester
+I/RenderThread: type=1400 audit(0.0:4318): avc: denied { getattr } for path="/dev/__properties__/u:object_r:vendor_system_prop:s0" dev="tmpfs" ino=31314 scontext=u:r:untrusted_app_27:s0:c152,c256,c512,c768 tcontext=u:object_r:vendor_system_prop:s0 tclass=file permissive=1 app=com.rokid.cslam.tester
+W/id.cslam.teste: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+W/id.cslam.teste: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+D/Build.MODEL: RG-stationXR2
+D/EXEC: setprop vendor.runtime.fastcv.defaultDSP 2   ->  0
+E/TAG: -------没有开启权限
+I/AdrenoGLES-0: QUALCOMM build                   : 5d05524e8d, Ia224427cc6
+    Build Date                       : 07/07/21
+    OpenGL ES Shader Compiler Version: EV031.35.16.00
+    Local Branch                     : 
+    Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.8.12.C3.10.00.00.670.284
+    Remote Branch                    : NONE
+    Reconstruct Branch               : NOTHING
+I/AdrenoGLES-0: Build Config                     : S P 8.0.12 AArch64
+I/AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+I/AdrenoGLES-0: Driver Version                   : 0582.0
+I/AdrenoGLES-0: PFP: 0x016dd099, ME: 0x00000000
+W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@85345b8
+D/CameraGLViewBase: Attr count: 3
+D/xxxxSlamCamActivity: deviceName is RG-stationXR2
+D/xxxxSlamCamActivity: deviceName2 is DEFAULT
+D/xxxxSlamCamActivity: deviceName is not found and timedelay is 0
+D/xxxxxx:  : DEFAULT.yaml -> /data/user/0/com.rokid.cslam.tester/files/SLAM/debug.yaml
+I/XR: [XRLAB][sdk/AREngine.cpp      33] ### 640, 480, 480.000000, 480.000000, 320.000000, 240.000000
+I/XR: [XRLAB⚠️ ][src/XRServer.cpp     122] XRLoger38100 --> binding port: 38100
+I/XR: [XRLAB][cpp/sdk/Config.cpp    24] K.type=5
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp   64] xxxxx getenv [ADSP_LIBRARY_PATH : /vendor/lib/rfsa/adsp;/system/lib/rfsa/adsp;/system/vendor/lib/rfsa/adsp;/dsp] 
+D/XXXXSOSO: so_fcvSetOperationMode 2 
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:2333: fastrpc_apps_user_init done
+D/fastcv_lib_log: Fastcv vendor library
+D/fastcv_lib_log: Fastcv vendor library
+I/fastcv_lib_log: QCVAQ6_deinit
+D/fastcv_lib_log: vendor.runtime.fastcv.defaultDSP: 2
+D/fastcv_lib_log: fcv_defaultDSP_StrArr[0]=2
+D/fastcv_lib_log: defaultDSP is reset to=2
+D/fastcv_lib_log: Begin of domain_channel_open mdsp_domain_handle=0x7d57b3ef08 value of mdsp_domain_handle=0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:2142: Error 0xffffffff: apps_dev_init failed for domain 1, errno Transport endpoint is not connected
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:2238: Error 0xffffffff: open_dev (-1) failed for domain 1
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1037: Error 0xffffffff: remote_handle64_open failed for file:///libfastcvdsp_skel.so?fastcvdsp_skel_handle_invoke&_modver=1.0&_dom=mdsp
+E/fastcv_lib_log: Error: fastcvdsp domain open failed on MDSP
+D/fastcv_lib_log: In fcvQ6SessionInit : attrib.value=1  
+E/fastcv_lib_log: Begin of fcvQ6SessionInit_internal dsp_handle=0 22620 vendor/qcom/proprietary/cv-noship/fastcv/src/qdsp_rpc/multi_domains/qcvaq6rpc_clnt_abstractionLayer.c
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:405: Error 0x1d: verify_local_handle failed. handle 0x0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:420: Error 0x1d: get_domain_from_handle failed. handle 0x0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:939: Error 0x1d: remote_handle64_invoke failed for handle 0x0, method 2 on domain 3 (sc 0x2020000)
+E/fastcv_lib_log: fastcvdsp_fcvQ6SessionInit failed
+E/fastcv_lib_log: Q6 initialized failed. Q6 FastCV functions are disabled.
+D/fastcv_lib_log: Fastcv vendor library
+D/fastcv_lib_log: Fastcv vendor library
+I/fastcv_lib_log: QCVAQ6_deinit
+D/fastcv_lib_log: Begin of domain_channel_close mdsp_domain_handle=0x7d57b3ef08 mdsp_domain_handle=0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:405: Error 0x1d: verify_local_handle failed. handle 0x0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:420: Error 0x1d: get_domain_from_handle failed. handle 0x0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:939: Error 0x1d: remote_handle64_invoke failed for handle 0x0, method 3 on domain 3 (sc 0x3000000)
+E/fastcv_lib_log: Error while calling fastcvdsp_deinitQ6 for MDSP
+D/fastcv_lib_log: End of domain_channel_close for MDSP 
+D/fastcv_lib_log: vendor.runtime.fastcv.defaultDSP: 2
+D/fastcv_lib_log: fcv_defaultDSP_StrArr[0]=2
+D/fastcv_lib_log: defaultDSP is reset to=2
+D/fastcv_lib_log: Begin of domain_channel_open mdsp_domain_handle=0x7d57b3ef08 value of mdsp_domain_handle=0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:2142: Error 0xffffffff: apps_dev_init failed for domain 1, errno Transport endpoint is not connected
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:2238: Error 0xffffffff: open_dev (-1) failed for domain 1
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1037: Error 0xffffffff: remote_handle64_open failed for file:///libfastcvdsp_skel.so?fastcvdsp_skel_handle_invoke&_modver=1.0&_dom=mdsp
+E/fastcv_lib_log: Error: fastcvdsp domain open failed on MDSP
+D/fastcv_lib_log: In fcvQ6SessionInit : attrib.value=2  
+E/fastcv_lib_log: Begin of fcvQ6SessionInit_internal dsp_handle=0 22620 vendor/qcom/proprietary/cv-noship/fastcv/src/qdsp_rpc/multi_domains/qcvaq6rpc_clnt_abstractionLayer.c
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:405: Error 0x1d: verify_local_handle failed. handle 0x0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:420: Error 0x1d: get_domain_from_handle failed. handle 0x0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:939: Error 0x1d: remote_handle64_invoke failed for handle 0x0, method 2 on domain 3 (sc 0x2020000)
+E/fastcv_lib_log: fastcvdsp_fcvQ6SessionInit failed
+E/fastcv_lib_log: Q6 initialized failed. Q6 FastCV functions are disabled.
+D/fastcv_lib_log: Fastcv vendor library
+I/fastcv_lib_log: QCVAQ6_deinit
+D/fastcv_lib_log: Begin of domain_channel_close mdsp_domain_handle=0x7d57b3ef08 mdsp_domain_handle=0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:405: Error 0x1d: verify_local_handle failed. handle 0x0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:420: Error 0x1d: get_domain_from_handle failed. handle 0x0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:939: Error 0x1d: remote_handle64_invoke failed for handle 0x0, method 3 on domain 3 (sc 0x3000000)
+E/fastcv_lib_log: Error while calling fastcvdsp_deinitQ6 for MDSP
+D/fastcv_lib_log: End of domain_channel_close for MDSP 
+D/fastcv_lib_log: vendor.runtime.fastcv.defaultDSP: 2
+D/fastcv_lib_log: fcv_defaultDSP_StrArr[0]=2
+D/fastcv_lib_log: defaultDSP is reset to=2
+D/fastcv_lib_log: Begin of domain_channel_open mdsp_domain_handle=0x7d57b3ef08 value of mdsp_domain_handle=0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:2142: Error 0xffffffff: apps_dev_init failed for domain 1, errno Transport endpoint is not connected
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:2238: Error 0xffffffff: open_dev (-1) failed for domain 1
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1037: Error 0xffffffff: remote_handle64_open failed for file:///libfastcvdsp_skel.so?fastcvdsp_skel_handle_invoke&_modver=1.0&_dom=mdsp
+E/fastcv_lib_log: Error: fastcvdsp domain open failed on MDSP
+D/fastcv_lib_log: In fcvQ6SessionInit : attrib.value=1  
+E/fastcv_lib_log: Begin of fcvQ6SessionInit_internal dsp_handle=0 22620 vendor/qcom/proprietary/cv-noship/fastcv/src/qdsp_rpc/multi_domains/qcvaq6rpc_clnt_abstractionLayer.c
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:405: Error 0x1d: verify_local_handle failed. handle 0x0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:420: Error 0x1d: get_domain_from_handle failed. handle 0x0
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:939: Error 0x1d: remote_handle64_invoke failed for handle 0x0, method 2 on domain 3 (sc 0x2020000)
+E/fastcv_lib_log: fastcvdsp_fcvQ6SessionInit failed
+E/fastcv_lib_log: Q6 initialized failed. Q6 FastCV functions are disabled.
+D/XXXXSOSO: so_fcvMemInit 
+D/XXXXSOSO: so_fcvGetVersion 
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp   71] Using FastCV version 1.7.1
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp   72] Using FastCV version 1.7.1
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp   73] Using FastCV version 1.7.1
+D/xxxxSlamCamActivity: 640,480
+D/InterfaceCamera: 曝光时间, 参数(ms):10
+D/CameraGLView: Connecting to camera
+D/CameraGLView: Initialize java camera width 640 height 480
+D/CameraManager: startBackgroundThread
+I/CameraManagerGlobal: Connecting to camera service
+D/CameraManager: openCamera: maxImages:2
+D/CameraManager: openCamera on BackgroundHandler
+D/CameraGLView: openCamera
+D/CameraManager: startPreview
+D/CameraManager: startPreview begin ........
+D/CameraManager: 设置手机相机.曝光时间:10ms
+D/CameraGLView: Starting processing thread
+I/XR: [XRLAB][cpp/./sdk/Tracker.h  154] SetAbsoluteMode: 1
+I/Choreographer: Skipped 143 frames!  The application may be doing too much work on its main thread.
+E/VpsExtension: Failed to get binder for service "vendor.vpsservice"
+I/chatty: uid=10152(com.rokid.cslam.tester) identical 1 line
+E/VpsExtension: Failed to get binder for service "vendor.vpsservice"
+D/OPENGL: compileScript status info:
+D/OPENGL: compileScript status info:
+I/OpenGLRenderer: Davey! duration=2002ms; Flags=1, IntendedVsync=3908203472752, Vsync=3910189583593, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=3910193458559, AnimationStart=3910193483819, PerformTraversalsStart=3910193927986, DrawStart=3910204303038, SyncQueued=3910204912049, SyncStart=3910205145590, IssueDrawCommandsStart=3910205313611, SwapBuffers=3910206322465, FrameCompleted=3910206613663, DequeueBufferDuration=255000, QueueBufferDuration=105000, 
+I/OpenGLRenderer: Davey! duration=2004ms; Flags=1, IntendedVsync=3908203472752, Vsync=3910189583593, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=3910193458559, AnimationStart=3910193483819, PerformTraversalsStart=3910193927986, DrawStart=3910206902517, SyncQueued=3910206941111, SyncStart=3910207090330, IssueDrawCommandsStart=3910207129653, SwapBuffers=3910207687986, FrameCompleted=3910207988455, DequeueBufferDuration=82000, QueueBufferDuration=119000, 
+D/OPENGL: linkAttach link status is 
+W/id.cslam.teste: Core platform API violation: Ljava/nio/Buffer;->position:I from Landroid/opengl/GLES20; using JNI
+W/id.cslam.teste: Core platform API violation: Ljava/nio/Buffer;->limit:I from Landroid/opengl/GLES20; using JNI
+W/id.cslam.teste: Core platform API violation: Ljava/nio/Buffer;->_elementSizeShift:I from Landroid/opengl/GLES20; using JNI
+W/id.cslam.teste: Core platform API violation: Ljava/nio/Buffer;->address:J from Landroid/opengl/GLES20; using JNI
+D/IMUManager: MyPhoneIMU.register(), SensorRate is 0
+D/CameraManager: updatePreview ........
+I/[MyTimestamp]: xxxxxxx Start Timestamp Server
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  880] ---fcvMemAlloc----1---
+D/XXXXSOSO: so_fcvMemAlloc 80000 16
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  882] ---fcvMemAlloc----2---
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 84,189 54.0    84,189 54.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 65,206 46.0    65,206 46.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 58,213 40.0    58,213 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:406 350 totalSize:187 w:640 H:480
+I/CardboardSDK: PosePrediction::GetRotationFromGyroscope: Velocity really small, returning identity rotation.
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 83,189 51.0    83,189 51.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 71,195 40.0    71,195 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 65,205 49.0    65,205 49.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:402 310 totalSize:179 w:640 H:480
+I/CardboardSDK: PosePrediction::GetRotationFromGyroscope: Velocity really small, returning identity rotation.
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 83,189 52.0    83,189 52.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 71,195 41.0    71,195 41.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 64,204 43.0    64,204 43.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:383 319 totalSize:182 w:640 H:480
+I/CardboardSDK: PosePrediction::GetRotationFromGyroscope: Velocity really small, returning identity rotation.
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 103,96 40.0    103,96 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 83,188 54.0    83,188 54.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 72,195 43.0    72,195 43.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:515 328 totalSize:196 w:640 H:480
+I/CardboardSDK: PosePrediction::GetRotationFromGyroscope: Velocity really small, returning identity rotation.
+D/CardboardSDK: yyyyyy Version 2022.09.05
+I/CardboardSDK: PosePrediction::GetRotationFromGyroscope: Velocity really small, returning identity rotation.
+I/CardboardSDK: PosePrediction::GetRotationFromGyroscope: Velocity really small, returning identity rotation.
+I/XR: [XRLAB⚠️ ][src/XRServer.cpp     122] Socket3088830888 --> binding port: 30888
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 104,121 55.0    104,121 55.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 246,179 40.0    246,179 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 83,188 53.0    83,188 53.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:413 326 totalSize:197 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 104,121 67.0    104,121 67.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 246,179 41.0    246,179 41.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 82,188 55.0    82,188 55.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:2015 2171 totalSize:201 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 104,121 72.0    104,121 72.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 246,179 41.0    246,179 41.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 82,188 57.0    82,188 57.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:342 283 totalSize:205 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 104,121 79.0    104,121 79.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 246,179 40.0    246,179 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 70,194 46.0    70,194 46.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:420 331 totalSize:202 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 104,121 89.0    104,121 89.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 246,179 41.0    246,179 41.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 82,187 53.0    82,187 53.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:410 351 totalSize:202 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 104,121 109.0    104,121 109.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 246,179 41.0    246,179 41.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 82,187 54.0    82,187 54.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:399 329 totalSize:195 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 104,121 115.0    104,121 115.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 246,179 40.0    246,179 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 69,194 42.0    69,194 42.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:436 340 totalSize:191 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 103,122 124.0    103,122 124.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 246,179 40.0    246,179 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 79,186 44.0    79,186 44.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:506 327 totalSize:202 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 104,122 138.0    104,122 138.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 246,179 41.0    246,179 41.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 79,186 46.0    79,186 46.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:449 408 totalSize:197 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 103,122 142.0    103,122 142.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 79,185 42.0    79,185 42.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 81,187 49.0    81,187 49.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:341 283 totalSize:195 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 103,96 40.0    103,96 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 103,122 149.0    103,122 149.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 246,179 40.0    246,179 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:403 327 totalSize:194 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 103,96 40.0    103,96 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 103,122 152.0    103,122 152.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 246,179 40.0    246,179 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:419 332 totalSize:203 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 103,96 41.0    103,96 41.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 102,122 157.0    102,122 157.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 246,179 40.0    246,179 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:393 327 totalSize:195 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 103,96 40.0    103,96 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 102,122 154.0    102,122 154.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 246,179 41.0    246,179 41.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:410 361 totalSize:194 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 102,121 145.0    102,121 145.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 104,123 112.0    104,123 112.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 246,179 42.0    246,179 42.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:399 889 totalSize:203 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 102,121 152.0    102,121 152.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 104,123 110.0    104,123 110.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 246,179 40.0    246,179 40.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:462 455 totalSize:197 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 102,121 151.0    102,121 151.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 104,123 113.0    104,123 113.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 246,179 41.0    246,179 41.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:1365 287 totalSize:196 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[0]: 102,121 149.0    102,121 149.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[1]: 104,123 116.0    104,123 116.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  942] Corner[2]: 246,179 41.0    246,179 41.0
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  946] corner dtime:391 325 totalSize:193 w:640 H:480
+D/XXXXSOSO: fcvCornerFast9Scoreu8_v2

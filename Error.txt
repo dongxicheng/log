@@ -1,0 +1,199 @@
+
+04/10 14:47:10: Launching 'app' on Rokid RG-stationXR2.
+Install successfully finished in 1 s 282 ms.
+$ adb shell am start -n "com.rokid.cslam.tester/com.rokid.cslam.main.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Connected to process 11833 on device 'rokid-rg_stationxr2-1301072151000221'.
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+I/Zygote: seccomp disabled by setenforce 0
+I/id.cslam.teste: Late-enabling -Xcheck:jni
+E/id.cslam.teste: Unknown bits set in runtime_flags: 0x8000
+I/Perf: Connecting to perf service.
+I/AdrenoGLES-0: Profiling interface enabled.
+I/AdrenoGLES-0: ESXAPILOG: API logging initialized: Name = com.rokid.cslam.tester, PID = 11833
+I/RenderThread: type=1400 audit(0.0:3924): avc: denied { open } for path="/dev/__properties__/u:object_r:vendor_system_prop:s0" dev="tmpfs" ino=31314 scontext=u:r:untrusted_app_27:s0:c152,c256,c512,c768 tcontext=u:object_r:vendor_system_prop:s0 tclass=file permissive=1 app=com.rokid.cslam.tester
+I/RenderThread: type=1400 audit(0.0:3925): avc: denied { getattr } for path="/dev/__properties__/u:object_r:vendor_system_prop:s0" dev="tmpfs" ino=31314 scontext=u:r:untrusted_app_27:s0:c152,c256,c512,c768 tcontext=u:object_r:vendor_system_prop:s0 tclass=file permissive=1 app=com.rokid.cslam.tester
+I/RenderThread: type=1400 audit(0.0:3926): avc: denied { map } for path="/dev/__properties__/u:object_r:vendor_system_prop:s0" dev="tmpfs" ino=31314 scontext=u:r:untrusted_app_27:s0:c152,c256,c512,c768 tcontext=u:object_r:vendor_system_prop:s0 tclass=file permissive=1 app=com.rokid.cslam.tester
+I/RenderThread: type=1400 audit(0.0:3927): avc: denied { read } for name="u:object_r:vendor_default_prop:s0" dev="tmpfs" ino=31284 scontext=u:r:untrusted_app_27:s0:c152,c256,c512,c768 tcontext=u:object_r:vendor_default_prop:s0 tclass=file permissive=1 app=com.rokid.cslam.tester
+I/RenderThread: type=1400 audit(0.0:3928): avc: denied { open } for path="/dev/__properties__/u:object_r:vendor_default_prop:s0" dev="tmpfs" ino=31284 scontext=u:r:untrusted_app_27:s0:c152,c256,c512,c768 tcontext=u:object_r:vendor_default_prop:s0 tclass=file permissive=1 app=com.rokid.cslam.tester
+I/RenderThread: type=1400 audit(0.0:3929): avc: denied { getattr } for path="/dev/__properties__/u:object_r:vendor_default_prop:s0" dev="tmpfs" ino=31284 scontext=u:r:untrusted_app_27:s0:c152,c256,c512,c768 tcontext=u:object_r:vendor_default_prop:s0 tclass=file permissive=1 app=com.rokid.cslam.tester
+W/id.cslam.teste: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+W/id.cslam.teste: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+D/Build.MODEL: RG-stationXR2
+D/EXEC: setprop vendor.runtime.fastcv.defaultDSP 1   ->  0
+E/TAG: -------没有开启权限
+I/AdrenoGLES-0: QUALCOMM build                   : 5d05524e8d, Ia224427cc6
+    Build Date                       : 07/07/21
+    OpenGL ES Shader Compiler Version: EV031.35.16.00
+    Local Branch                     : 
+    Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.8.12.C3.10.00.00.670.284
+    Remote Branch                    : NONE
+    Reconstruct Branch               : NOTHING
+I/AdrenoGLES-0: Build Config                     : S P 8.0.12 AArch64
+I/AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+I/AdrenoGLES-0: Driver Version                   : 0582.0
+I/AdrenoGLES-0: PFP: 0x016dd099, ME: 0x00000000
+W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@85345b8
+D/CameraGLViewBase: Attr count: 3
+D/xxxxSlamCamActivity: deviceName is RG-stationXR2
+D/xxxxSlamCamActivity: deviceName2 is DEFAULT
+D/xxxxSlamCamActivity: deviceName is not found and timedelay is 0
+D/xxxxxx:  : DEFAULT.yaml -> /data/user/0/com.rokid.cslam.tester/files/SLAM/debug.yaml
+I/XR: [XRLAB][sdk/AREngine.cpp      33] ### 640, 480, 480.000000, 480.000000, 320.000000, 240.000000
+I/XR: [XRLAB⚠️ ][src/XRServer.cpp     122] XRLoger38100 --> binding port: 38100
+I/XR: [XRLAB][cpp/sdk/Config.cpp    24] K.type=5
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp   64] xxxxx getenv [ADSP_LIBRARY_PATH : /vendor/lib/rfsa/adsp;/system/lib/rfsa/adsp;/system/vendor/lib/rfsa/adsp;/dsp] 
+D/XXXXSOSO: so_fcvSetOperationMode 2 
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:2333: fastrpc_apps_user_init done
+D/fastcv_lib_log: Fastcv vendor library
+D/fastcv_lib_log: Fastcv vendor library
+I/fastcv_lib_log: QCVAQ6_deinit
+D/fastcv_lib_log: vendor.runtime.fastcv.defaultDSP: 1
+D/fastcv_lib_log: fcv_defaultDSP_StrArr[0]=1
+D/fastcv_lib_log: defaultDSP is reset to=1
+D/fastcv_lib_log: Begin of domain_channel_open cdsp_domain_handle=0x7d56c7cef8  value of cdsp_domain_handle=0
+I/id.cslam.tester: type=1400 audit(0.0:3961): avc: denied { read } for name="adsprpc-smd-secure" dev="tmpfs" ino=31608 scontext=u:r:untrusted_app_27:s0:c152,c256,c512,c768 tcontext=u:object_r:xdsp_device:s0 tclass=chr_file permissive=1 app=com.rokid.cslam.tester
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1964: Successfully opened fastrpc_shell_3
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:2115: Successfully created user PD on domain 3 (attrs 0x0, debug_trace 0x0)
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_perf.c:233: fastrpc_perf_init: enabled RPC traces (kernel 0, dsp 0) with frequency 1000
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/mod_table.c:487: open_mod_table_open_dynamic: dynamic reverse module apps_std  already found with handle 0x56cb1198 (idx 0)
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:85::error: -1: AEE_SUCCESS == (nErr = mod_table_close(handle, errStr, errStrLen, dlErr))
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:770: Successfully opened file /vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
+W/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:780: Warning: apps_std_fopen_with_env failed with 0x2 for testsig-0xe9bec1a5.so (No such file or directory)
+W/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:780: Warning: apps_std_fopen_with_env failed with 0x2 for testsig.so (No such file or directory)
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:770: Successfully opened file /vendor/lib/rfsa/adsp/libfastcvadsp.so
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:770: Successfully opened file /vendor/lib/rfsa/adsp/libdspCV_skel.so
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1039: remote_handle64_open: Successfully opened handle 0x684e5880 for file:///libfastcvdsp_skel.so?fastcvdsp_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3
+D/fastcv_lib_log: Domain open is successful on CDSP. cdsp_domain_handle address=0x7d56c7cef8  cdsp_domain_handle value=538620876928
+D/fastcv_lib_log: End of domain_channel_open for CDSP 
+D/fastcv_lib_log: In fcvQ6SessionInit : attrib.value=1  
+E/fastcv_lib_log: Begin of fcvQ6SessionInit_internal dsp_handle=538620876928 22620 vendor/qcom/proprietary/cv-noship/fastcv/src/qdsp_rpc/multi_domains/qcvaq6rpc_clnt_abstractionLayer.c
+E/fastcv_lib_log: Checking for fcvVersion  22627 vendor/qcom/proprietary/cv-noship/fastcv/src/qdsp_rpc/multi_domains/qcvaq6rpc_clnt_abstractionLayer.c
+D/fastcv_lib_log: Q6 initialized successfully. Q6 FastCV functions mode 1 are enabled.
+I/fastcv_lib_log: FIT:(FeatureName=>QCVAQ6, Initialized=>1)
+D/fastcv_lib_log: Fastcv vendor library
+D/fastcv_lib_log: Fastcv vendor library
+I/fastcv_lib_log: QCVAQ6_deinit
+D/fastcv_lib_log: Begin of domain_channel_close cdsp_domain_handle=0x7d56c7cef8 cdsp_domain_handle=538620876928
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1059: remote_handle_close: closed handle 0x2640d720
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:921: Error 0xffffffff: remote_handle_invoke failed for handle 0x3, method 4 on domain 3 (sc 0x4020200)
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:257:listener protocol failure ffffffff
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:921: Error 0x8000040d: remote_handle_invoke failed for handle 0x3, method 4 on domain 3 (sc 0x4020200)
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:265::error: -2147482611: 0 == (nErr = __QAIC_HEADER(adsp_listener_next2)( ctx, nErr, 0, 0, &ctx, &handle, &sc, inBufs, inBufsLen, &inBufsLenReq))
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:348:Error 0x8000040d: listener2 thread exited
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:939: Error 0x8000040d: remote_handle64_invoke failed for handle 0x684e5880, method 3 on domain 3 (sc 0x3000000)
+W/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/log_config.c:338:Warning: file_watcher_thread received exit for domain 3, file com.rokid.cslam.tester.farf
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/mod_table.c:762: open_mod_table_close: closed reverse module apps_mem with handle 0x56cb1298
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:85::error: -1: AEE_SUCCESS == (nErr = mod_table_close(handle, errStr, errStrLen, dlErr))
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/mod_table.c:762: open_mod_table_close: closed reverse module apps_std with handle 0x56cb1198
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:85::error: -1: AEE_SUCCESS == (nErr = mod_table_close(handle, errStr, errStrLen, dlErr))
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:85::error: -1: AEE_SUCCESS == (nErr = mod_table_close(handle, errStr, errStrLen, dlErr))
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1085: remote_handle64_close: closed handle 0x7d684e5880
+D/fastcv_lib_log: Succesfully closed channel for cdsp_domain_handle 
+D/fastcv_lib_log: End of domain_channel_close for CDSP 
+D/fastcv_lib_log: vendor.runtime.fastcv.defaultDSP: 1
+D/fastcv_lib_log: fcv_defaultDSP_StrArr[0]=1
+D/fastcv_lib_log: defaultDSP is reset to=1
+D/fastcv_lib_log: Begin of domain_channel_open cdsp_domain_handle=0x7d56c7cef8  value of cdsp_domain_handle=0
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1964: Successfully opened fastrpc_shell_3
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:2115: Successfully created user PD on domain 3 (attrs 0x0, debug_trace 0x0)
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_perf.c:233: fastrpc_perf_init: enabled RPC traces (kernel 0, dsp 0) with frequency 1000
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/mod_table.c:487: open_mod_table_open_dynamic: dynamic reverse module apps_std  already found with handle 0x56cb1198 (idx 0)
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:85::error: -1: AEE_SUCCESS == (nErr = mod_table_close(handle, errStr, errStrLen, dlErr))
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:770: Successfully opened file /vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
+W/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:780: Warning: apps_std_fopen_with_env failed with 0x2 for testsig-0xe9bec1a5.so (No such file or directory)
+W/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:780: Warning: apps_std_fopen_with_env failed with 0x2 for testsig.so (No such file or directory)
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:770: Successfully opened file /vendor/lib/rfsa/adsp/libfastcvadsp.so
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:770: Successfully opened file /vendor/lib/rfsa/adsp/libdspCV_skel.so
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1039: remote_handle64_open: Successfully opened handle 0x684e5940 for file:///libfastcvdsp_skel.so?fastcvdsp_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3
+D/fastcv_lib_log: Domain open is successful on CDSP. cdsp_domain_handle address=0x7d56c7cef8  cdsp_domain_handle value=538620877120
+D/fastcv_lib_log: End of domain_channel_open for CDSP 
+D/fastcv_lib_log: In fcvQ6SessionInit : attrib.value=2  
+E/fastcv_lib_log: Begin of fcvQ6SessionInit_internal dsp_handle=538620877120 22620 vendor/qcom/proprietary/cv-noship/fastcv/src/qdsp_rpc/multi_domains/qcvaq6rpc_clnt_abstractionLayer.c
+E/fastcv_lib_log: Checking for fcvVersion  22627 vendor/qcom/proprietary/cv-noship/fastcv/src/qdsp_rpc/multi_domains/qcvaq6rpc_clnt_abstractionLayer.c
+D/fastcv_lib_log: Q6 initialized successfully. Q6 FastCV functions mode 2 are enabled.
+I/fastcv_lib_log: FIT:(FeatureName=>QCVAQ6, Initialized=>1)
+D/fastcv_lib_log: Fastcv vendor library
+I/fastcv_lib_log: QCVAQ6_deinit
+D/fastcv_lib_log: Begin of domain_channel_close cdsp_domain_handle=0x7d56c7cef8 cdsp_domain_handle=538620877120
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1059: remote_handle_close: closed handle 0x3170d720
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:921: Error 0xffffffff: remote_handle_invoke failed for handle 0x3, method 4 on domain 3 (sc 0x4020200)
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:257:listener protocol failure ffffffff
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:921: Error 0x8000040d: remote_handle_invoke failed for handle 0x3, method 4 on domain 3 (sc 0x4020200)
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:265::error: -2147482611: 0 == (nErr = __QAIC_HEADER(adsp_listener_next2)( ctx, nErr, 0, 0, &ctx, &handle, &sc, inBufs, inBufsLen, &inBufsLenReq))
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:348:Error 0x8000040d: listener2 thread exited
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:939: Error 0x8000040d: remote_handle64_invoke failed for handle 0x684e5940, method 3 on domain 3 (sc 0x3000000)
+W/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/log_config.c:338:Warning: file_watcher_thread received exit for domain 3, file com.rokid.cslam.tester.farf
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/mod_table.c:762: open_mod_table_close: closed reverse module apps_mem with handle 0x56cb1298
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:85::error: -1: AEE_SUCCESS == (nErr = mod_table_close(handle, errStr, errStrLen, dlErr))
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/mod_table.c:762: open_mod_table_close: closed reverse module apps_std with handle 0x56cb1198
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:85::error: -1: AEE_SUCCESS == (nErr = mod_table_close(handle, errStr, errStrLen, dlErr))
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:85::error: -1: AEE_SUCCESS == (nErr = mod_table_close(handle, errStr, errStrLen, dlErr))
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1085: remote_handle64_close: closed handle 0x7d684e5940
+D/fastcv_lib_log: Succesfully closed channel for cdsp_domain_handle 
+D/fastcv_lib_log: End of domain_channel_close for CDSP 
+D/fastcv_lib_log: vendor.runtime.fastcv.defaultDSP: 1
+D/fastcv_lib_log: fcv_defaultDSP_StrArr[0]=1
+D/fastcv_lib_log: defaultDSP is reset to=1
+D/fastcv_lib_log: Begin of domain_channel_open cdsp_domain_handle=0x7d56c7cef8  value of cdsp_domain_handle=0
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1964: Successfully opened fastrpc_shell_3
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:2115: Successfully created user PD on domain 3 (attrs 0x0, debug_trace 0x0)
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_perf.c:233: fastrpc_perf_init: enabled RPC traces (kernel 0, dsp 0) with frequency 1000
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/mod_table.c:487: open_mod_table_open_dynamic: dynamic reverse module apps_std  already found with handle 0x56cb1198 (idx 0)
+E/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/listener_android.c:85::error: -1: AEE_SUCCESS == (nErr = mod_table_close(handle, errStr, errStrLen, dlErr))
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:770: Successfully opened file /vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
+W/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:780: Warning: apps_std_fopen_with_env failed with 0x2 for testsig-0xe9bec1a5.so (No such file or directory)
+W/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:780: Warning: apps_std_fopen_with_env failed with 0x2 for testsig.so (No such file or directory)
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:770: Successfully opened file /vendor/lib/rfsa/adsp/libfastcvadsp.so
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/apps_std_imp.c:770: Successfully opened file /vendor/lib/rfsa/adsp/libdspCV_skel.so
+I/com.rokid.cslam.tester: vendor/qcom/proprietary/commonsys-intf/adsprpc/src/fastrpc_apps_user.c:1039: remote_handle64_open: Successfully opened handle 0x684e59d0 for file:///libfastcvdsp_skel.so?fastcvdsp_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 3
+D/fastcv_lib_log: Domain open is successful on CDSP. cdsp_domain_handle address=0x7d56c7cef8  cdsp_domain_handle value=538620877264
+D/fastcv_lib_log: End of domain_channel_open for CDSP 
+D/fastcv_lib_log: In fcvQ6SessionInit : attrib.value=1  
+E/fastcv_lib_log: Begin of fcvQ6SessionInit_internal dsp_handle=538620877264 22620 vendor/qcom/proprietary/cv-noship/fastcv/src/qdsp_rpc/multi_domains/qcvaq6rpc_clnt_abstractionLayer.c
+E/fastcv_lib_log: Checking for fcvVersion  22627 vendor/qcom/proprietary/cv-noship/fastcv/src/qdsp_rpc/multi_domains/qcvaq6rpc_clnt_abstractionLayer.c
+D/fastcv_lib_log: Q6 initialized successfully. Q6 FastCV functions mode 1 are enabled.
+I/fastcv_lib_log: FIT:(FeatureName=>QCVAQ6, Initialized=>1)
+D/XXXXSOSO: so_fcvMemInit 
+D/XXXXSOSO: so_fcvGetVersion 
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp   71] Using FastCV version 1.7.1
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp   72] Using FastCV version 1.7.1
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp   73] Using FastCV version 1.7.1
+D/xxxxSlamCamActivity: 640,480
+D/InterfaceCamera: 曝光时间, 参数(ms):10
+D/CameraGLView: Connecting to camera
+D/CameraGLView: Initialize java camera width 640 height 480
+D/CameraManager: startBackgroundThread
+I/CameraManagerGlobal: Connecting to camera service
+D/CameraManager: openCamera: maxImages:2
+D/CameraManager: openCamera on BackgroundHandler
+D/CameraGLView: openCamera
+D/CameraManager: startPreview
+D/CameraManager: startPreview begin ........
+D/CameraManager: 设置手机相机.曝光时间:10ms
+D/CameraGLView: Starting processing thread
+I/XR: [XRLAB][cpp/./sdk/Tracker.h  154] SetAbsoluteMode: 1
+I/Choreographer: Skipped 163 frames!  The application may be doing too much work on its main thread.
+E/VpsExtension: Failed to get binder for service "vendor.vpsservice"
+I/chatty: uid=10152(com.rokid.cslam.tester) identical 1 line
+E/VpsExtension: Failed to get binder for service "vendor.vpsservice"
+D/OPENGL: compileScript status info:
+D/OPENGL: compileScript status info:
+I/OpenGLRenderer: Davey! duration=2279ms; Flags=1, IntendedVsync=3091773853417, Vsync=3094037741998, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=3094040421006, AnimationStart=3094040445850, PerformTraversalsStart=3094040945485, DrawStart=3094051534443, SyncQueued=3094052173350, SyncStart=3094052486006, IssueDrawCommandsStart=3094052606787, SwapBuffers=3094053540120, FrameCompleted=3094053847725, DequeueBufferDuration=293000, QueueBufferDuration=118000, 
+D/OPENGL: linkAttach link status is 
+I/OpenGLRenderer: Davey! duration=2281ms; Flags=1, IntendedVsync=3091773853417, Vsync=3094037741998, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=3094040421006, AnimationStart=3094040445850, PerformTraversalsStart=3094040945485, DrawStart=3094054198662, SyncQueued=3094054236839, SyncStart=3094054349704, IssueDrawCommandsStart=3094054375485, SwapBuffers=3094054880902, FrameCompleted=3094055162152, DequeueBufferDuration=71000, QueueBufferDuration=112000, 
+W/id.cslam.teste: Core platform API violation: Ljava/nio/Buffer;->position:I from Landroid/opengl/GLES20; using JNI
+W/id.cslam.teste: Core platform API violation: Ljava/nio/Buffer;->limit:I from Landroid/opengl/GLES20; using JNI
+W/id.cslam.teste: Core platform API violation: Ljava/nio/Buffer;->_elementSizeShift:I from Landroid/opengl/GLES20; using JNI
+W/id.cslam.teste: Core platform API violation: Ljava/nio/Buffer;->address:J from Landroid/opengl/GLES20; using JNI
+D/IMUManager: MyPhoneIMU.register(), SensorRate is 0
+D/CameraManager: updatePreview ........
+I/[MyTimestamp]: xxxxxxx Start Timestamp Server
+I/XR: [XRLAB][cpp/sdk/Tracker.cpp  880] ---fcvMemAlloc----1---
+D/XXXXSOSO: so_fcvMemAlloc 80000 16
+A/libc: Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x7d5695bbb8 in tid 11972 (Thread-4), pid 11833 (id.cslam.tester)
+D/FrameBuffer: Size: 3
+D/FrameBuffer: Size: 4
+D/CardboardSDK: yyyyyy Version 2022.09.05
+I/CardboardSDK: PosePrediction::GetRotationFromGyroscope: Velocity really small, returning identity rotation.
+I/CardboardSDK: PosePrediction::GetRotationFromGyroscope: Velocity really small, returning identity rotation.
+I/XR: [XRLAB⚠️ ][src/XRServer.cpp     122] Socket3088830888 --> binding port: 30888
